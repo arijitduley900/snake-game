@@ -182,7 +182,7 @@ function playEatSound() {
     soundTimeout = setTimeout(() => {
         eatSound.pause();
         eatSound.currentTime = 0;
-    }, 5000);
+    }, 900);
 }
 
 function playGameOverSound() {
