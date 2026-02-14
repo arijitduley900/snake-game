@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>Snake Game</h1>
+
+    <div class="score-board">
+        <div>Score: <span id="score">0</span></div>
+        <div>High Score: <span id="highScore">0</span></div>
+    </div>
+
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <div class="mobile-controls">
+    <button class="control-btn" id="upBtn">⬆</button>
+    <div>
+        <button class="control-btn" id="leftBtn">⬅</button>
+        <button class="control-btn" id="downBtn">⬇</button>
+        <button class="control-btn" id="rightBtn">➡</button>
+    </div>
+</div>
+
+
+    <div class="buttons">
+        <button id="startBtn">Start</button>
+        <button id="restartBtn">Restart</button>
+    </div>
+
+    <div class="game-over" id="gameOverText"></div>
+
+    <!-- Sound -->
+    <audio id="eatSound" src="eat.mp3" preload="auto"></audio>
+    <audio id="gameOverSound" src="gameover.mp3" preload="auto"></audio>
+</div>
+
+<!-- Link JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
